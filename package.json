@@ -22,7 +22,7 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "start": "webpack serve --config webpack.config.js",
-    "start:built": "npx http-server -a localhost -p 8080 dist/"
+    "start:built": "npx http-server -a localhost -p 8080 docs/"
   },
   "dependencies": {
     "cesium": "^1.134.0"
