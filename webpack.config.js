@@ -76,6 +76,7 @@ module.exports = {
       patterns: [
         { from: "src/robots.txt" },
         { from: "src/CNAME" },
+        { from: "src/geojson", to: "geojson" },
         {
           from: path.join(cesiumSource, "Workers"),
           to: `${cesiumBaseUrl}/Workers`,
