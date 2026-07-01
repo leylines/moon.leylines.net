@@ -23,6 +23,34 @@
     <meta itemprop="description" content="<%= htmlWebpackPlugin.options.pageDescription %>">
     <meta itemprop="image" content="<%= htmlWebpackPlugin.options.pageURL %>/favicons/apple-touch-startup-image-1334x750.png">
 
+    <style>
+      html,
+      body,
+      #cesiumContainer {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        color: white;
+      }
+
+      .logo {
+        position: absolute;
+        display: block;
+        width: 10%;
+        margin-left: 45%;
+        margin-right: 45%;
+        bottom: 5px;
+        z-index: 999;
+      }
+    </style>
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@EarthAndData">
