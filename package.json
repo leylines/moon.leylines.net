@@ -25,20 +25,20 @@
     "start:built": "npx http-server -a localhost -p 8080 docs/"
   },
   "dependencies": {
-    "cesium": "^1.142.0"
+    "cesium": "^1.147.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^14.0.0",
-    "css-loader": "^7.1.4",
+    "css-loader": "^7.1.5",
     "favicons-webpack-plugin": "^6.0.1",
-    "html-webpack-plugin": "^5.6.7",
+    "html-webpack-plugin": "^5.6.8",
     "http-server": "^14.1.1",
     "lil-gui": "^0.21.0",
-    "npm-check-updates": "^22.2.9",
+    "npm-check-updates": "^23.1.1",
     "sitemap-webpack-plugin": "^1.1.1",
     "style-loader": "^4.0.0",
-    "webpack": "^5.108.3",
-    "webpack-cli": "^7.1.0",
-    "webpack-dev-server": "^5.2.5"
+    "webpack": "^5.112.2",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0"
   }
 }
