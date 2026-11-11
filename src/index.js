@@ -31,6 +31,7 @@ const viewer = new Cesium.Viewer("cesiumContainer", {
 });
 
 viewer.scene.globe.show = false;
+viewer.scene.globe.depthTestAgainstTerrain = true;
 
 viewer.extend(Cesium.viewerDragDropMixin);
 
@@ -83,13 +84,9 @@ var anthropogenic_objects = await Cesium.GeoJsonDataSource.load('geojson/anthrop
   clampToGround: true,
 });
 
-var new_craters = await Cesium.GeoJsonDataSource.load('geojson/new_craters.geojson', {
-  credit: "Speyerer, E., Povilaitis, R., Robinson, M., Thomas, P., and Wagner, R. Quantifying crater production and regolith overturn on the Moon with temporal imaging. Nature 538, 215–218 (2016). https://doi.org/10.1038/nature19829",
-  clampToGround: true,
-});
-
 var entities;
 entities = anthropogenic_objects.entities.values;
+
 entities.forEach((entity) => {
   entity.label = new Cesium.LabelGraphics({
     text: entity.properties.Mission,
@@ -119,6 +116,11 @@ entities.forEach((entity) => {
 });
 viewer.dataSources.add(anthropogenic_objects);
 anthropogenic_objects.show = false;
+
+var new_craters = await Cesium.GeoJsonDataSource.load('geojson/new_craters.geojson', {
+  credit: "Speyerer, E., Povilaitis, R., Robinson, M., Thomas, P., and Wagner, R. Quantifying crater production and regolith overturn on the Moon with temporal imaging. Nature 538, 215–218 (2016). https://doi.org/10.1038/nature19829",
+  clampToGround: true,
+});
 
 entities = new_craters.entities.values;
 entities.forEach((entity) => {
