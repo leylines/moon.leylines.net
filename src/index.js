@@ -10,7 +10,7 @@ Cesium.Ion.defaultAccessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOi
 Cesium.Ellipsoid.default = Cesium.Ellipsoid.MOON;
 
 const viewer = new Cesium.Viewer("cesiumContainer", {
-  terrainProvider: false,
+  //terrainProvider: false,
   baseLayer: false,
   // 2D and Columbus View are not currently supported
   // for global 3D Tiles tilesets
