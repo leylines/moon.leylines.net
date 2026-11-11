@@ -100,7 +100,7 @@ entities.forEach((entity) => {
     pixelOffset: new Cesium.Cartesian2(0, -22),
     scaleByDistance: new Cesium.NearFarScalar(1.5e2, 1.0, 1.5e7, 0.5),
     translucencyByDistance: new Cesium.NearFarScalar(2.5e7, 1.0, 4.0e7, 0.0),
-    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+    heightReference: Cesium.HeightReference.CLAMP_TO_3D_TILE,
     disableDepthTestDistance: new Cesium.CallbackProperty(() => {
       return Cesium.Cartesian3.magnitude(viewer.scene.camera.positionWC);
     }, false),
@@ -111,7 +111,7 @@ entities.forEach((entity) => {
     outlineColor: Cesium.Color.WHITE,
     outlineWidth: 2,
     scaleByDistance: new Cesium.NearFarScalar(1.5e3, 1.0, 4.0e7, 0.1),
-    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+    heightReference: Cesium.HeightReference.CLAMP_TO_3D_TILE,
     disableDepthTestDistance: new Cesium.CallbackProperty(() => {
       return Cesium.Cartesian3.magnitude(viewer.scene.camera.positionWC);
     }, false),
@@ -128,7 +128,7 @@ entities.forEach((entity) => {
     outlineColor: Cesium.Color.WHITE,
     outlineWidth: 1,
     scaleByDistance: new Cesium.NearFarScalar(1.5e3, 1.0, 4.0e7, 0.1),
-    heightReference: Cesium.HeightReference.CLAMP_TO_GROUND,
+    heightReference: Cesium.HeightReference.CLAMP_TO_3D_TILE,
     disableDepthTestDistance: new Cesium.CallbackProperty(() => {
       return Cesium.Cartesian3.magnitude(viewer.scene.camera.positionWC);
     }, false),
